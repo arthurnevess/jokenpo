@@ -1,0 +1,125 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(120, 169, 241);
+    text-align: center;
+}
+:root{
+    --green: rgb(46, 177, 86);
+    --red: rgb(238, 85, 59);
+    --black: rgba(3, 0, 0, 0.336);
+}
+
+.main1 {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.label{
+    border-radius: 10px;
+    width: 60px;
+    padding: 5px;
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+.voce{
+    background-color: var(--green);
+    left: 25%;
+}
+.placar{
+    width: 150px;
+    height: 40px;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.compter{
+    background-color: var(--red);
+    right: 25%;
+}
+
+.main div {
+    width: 140px;
+    max-height: 140px;
+    display: inline-block;
+    padding: 10px;
+}
+.main div img{
+    width: 100%;
+    max-height: 140px;
+}
+.botoes{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.botoes img{
+    max-width: 80%;
+    transition: .2s;
+}
+
+label{
+    position: relative;
+}
+.btn{
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+[type=radio]{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+[type=radio]:checked + button {
+    background-color: var(--green);
+}
+[type=radio] + .btn {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+.btn:hover{
+    background-color: var(--green);
+}
+[type=radio] + .btn {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.btn-jogar, .btn-jogar:disabled:hover {
+    width: 330px;
+    padding: 10px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    background-color: white;
+    color: var(--green);
+    margin-top: 20px;
+    font-size: 100%;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-jogar:hover{
+    background-color: var(--green);
+    color: white;
+}
